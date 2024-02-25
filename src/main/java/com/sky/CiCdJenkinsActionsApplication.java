@@ -7,15 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class CiCdGithubActionsApplication {
+public class CiCdJenkinsActionsApplication {
 
 	@GetMapping("/welcome")
 	public String welcome() {
 		return "welcome to springboot";
 	}
-
 	public static void main(String[] args) {
-		SpringApplication.run(CiCdGithubActionsApplication.class, args);
+		SpringApplication.run(CiCdJenkinsActionsApplication.class, args);
 	}
 
 }
